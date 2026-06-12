@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+section {
+    margin-bottom: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.static {
+    background-color: #3498db;
+    position: static;
+}
+
+.relative {
+    background-color: #e74c3c;
+    position: relative;
+    left: 50px;
+    top: 10px;
+}
+
+.box-container {
+    position: relative;
+    height: 150px;
+    border: 2px dashed #667eea;
+}
+
+.absolute {
+    background-color: #2ecc71;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.fixed {
+    background-color: #f39c12;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+}
+
+.sticky {
+    background-color: #9b59b6;
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
