@@ -1,0 +1,252 @@
+/* Variables de Color */
+:root {
+    --dark-bg: #0b0b0b;
+    --dark-surface: #121212;
+    --dark-border: #222;
+    --accent-color: #e60000;
+    --text-main: #ffffff;
+    --text-secondary: #888;
+    --text-muted: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-main);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: var(--dark-surface);
+    border-bottom: 1px solid var(--dark-border);
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.navbar-custom .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-brand {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Formulario */
+.form-card {
+    background-color: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.form-card h5 {
+    color: var(--text-main);
+    text-align: center;
+}
+
+.form-label {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.input-custom {
+    background-color: #000 !important;
+    border: 1px solid var(--dark-border) !important;
+    color: var(--text-main) !important;
+    border-radius: 4px !important;
+    padding: 10px 12px !important;
+    font-size: 0.95rem;
+}
+
+.input-custom:focus {
+    border-color: var(--accent-color) !important;
+    box-shadow: 0 0 5px rgba(230, 0, 0, 0.3) !important;
+}
+
+.input-custom::placeholder {
+    color: var(--text-muted) !important;
+}
+
+small {
+    display: block;
+    margin-top: 5px;
+}
+
+/* Botón */
+.btn-registrar {
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-registrar:hover {
+    background-color: #b30000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 0, 0, 0.4);
+}
+
+.btn-registrar:active {
+    transform: translateY(0);
+}
+
+/* Divisor */
+.divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--dark-border), transparent);
+    margin: 40px 0;
+}
+
+/* Sección */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-title h4 {
+    color: var(--text-main);
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Tarjetas de Producto */
+.producto-card {
+    background-color: var(--dark-surface);
+    border: 1px solid var(--dark-border);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.producto-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(230, 0, 0, 0.2);
+}
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+}
+
+.card-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.9);
+    transition: filter 0.3s;
+}
+
+.producto-card:hover .card-image-container img {
+    filter: brightness(1);
+}
+
+.card-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title-custom {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-price {
+    color: var(--text-main);
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.btn-eliminar {
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    transition: all 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Placeholder */
+.placeholder-card {
+    background-color: var(--dark-surface);
+    border: 1px dashed var(--dark-border);
+    border-radius: 6px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer-custom {
+    background-color: var(--dark-surface);
+    border-top: 1px solid var(--dark-border);
+    padding: 20px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .form-card {
+        padding: 20px;
+    }
+    
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .producto-card {
+        margin-bottom: 15px;
+    }
+}

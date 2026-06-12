@@ -3,50 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablas - Juan Manuel Correa</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tabla de Tecnologías Web - Juan Manuel Correa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
-        <h1>Tablas - Juan Manuel Correa (3128643741)</h1>
-        
-        <section>
-            <h2>Tabla de Productos</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Laptop</td>
-                        <td>$1000</td>
-                        <td>2</td>
-                        <td>$2000</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Mouse</td>
-                        <td>$25</td>
-                        <td>5</td>
-                        <td>$125</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Teclado</td>
-                        <td>$75</td>
-                        <td>3</td>
-                        <td>$225</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+        <header>
+            <h1>Introducción a Tecnologías Web</h1>
+            <p class="author">Juan Manuel Correa | 3128643741</p>
+        </header>
+
+        <main>
+            <section class="tabla-section">
+                <h2>Pilares Fundamentales del Desarrollo Web</h2>
+                <p class="description">Las tres tecnologías base que todo desarrollador web debe dominar:</p>
+                
+                <table class="tech-table">
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Descripción</th>
+                            <th>Función Principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>HTML</strong></td>
+                            <td>Lenguaje de marcado para estructurar contenido web</td>
+                            <td>Define la estructura y semántica del contenido</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CSS</strong></td>
+                            <td>Hojas de estilo para diseño y maquetación</td>
+                            <td>Controla el aspecto visual y el layout</td>
+                        </tr>
+                        <tr>
+                            <td><strong>JavaScript</strong></td>
+                            <td>Lenguaje de programación para interactividad</td>
+                            <td>Agrega lógica y comportamiento dinámico</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="video-section">
+                <h2>Recurso Educativo: Introducción a Desarrollo Web</h2>
+                <p>Video informativo sobre los conceptos básicos del desarrollo web:</p>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="400" 
+                        src="https://www.youtube.com/embed/UB1O30fR-EE" 
+                        title="Introducción al Desarrollo Web"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="additional-info">
+                <h2>Información Adicional</h2>
+                <div class="info-cards">
+                    <div class="card">
+                        <h3>Próximos Temas</h3>
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>Frameworks CSS</li>
+                            <li>JavaScript Avanzado</li>
+                            <li>APIs y Fetch</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Herramientas Recomendadas</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Chrome DevTools</li>
+                            <li>Git & GitHub</li>
+                            <li>Bootstrap Framework</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
+
 </body>
 </html>
