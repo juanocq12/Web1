@@ -1,48 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posicionamiento - Juan Manuel Correa</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Tipos de Posición en CSS - Juan Manuel Correa</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Posicionamiento CSS - Juan Manuel Correa</h1>
-        <p>3128643741</p>
-    </header>
 
-    <div class="container">
-        <section>
-            <h2>Posicionamiento Static</h2>
-            <div class="box static">Static</div>
-        </section>
+<h1>Ejemplos de Posicionamiento CSS</h1>
+<p style="text-align: center; color: #999; margin-bottom: 30px;">Juan Manuel Correa | 3128643741</p>
 
-        <section>
-            <h2>Posicionamiento Relative</h2>
-            <div class="box relative">Relative</div>
-        </section>
+<!-- POSITION STATIC -->
+<section class="bloque">
+  <h2>Position Static</h2>
+  <p>Es la posición normal de los elementos. Se colocan uno debajo del otro.</p>
+  <div class="area">
+    <div class="box">Elemento A</div>
+    <div class="box">Elemento B</div>
+  </div>
+</section>
 
-        <section>
-            <h2>Posicionamiento Absolute</h2>
-            <div class="box-container">
-                <div class="box absolute">Absolute</div>
-            </div>
-        </section>
+<!-- POSITION RELATIVE -->
+<section class="bloque">
+  <h2>Position Relative</h2>
+  <p>Permite mover el elemento desde su lugar original sin perder su espacio.</p>
+  <div class="area">
+    <div class="box">Elemento A</div>
+    <div class="box relativo">movido</div>
+  </div>
+</section>
 
-        <section>
-            <h2>Posicionamiento Fixed</h2>
-            <div class="box fixed">Fixed</div>
-        </section>
+<!-- POSITION ABSOLUTE -->
+<section class="bloque">
+  <h2>Position Absolute</h2>
+  <p>Se posiciona con respecto a su contenedor padre.</p>
+  <div class="area contenedor-padre">
+    <div class="box">Elemento A</div>
+    <div class="box absoluto">ubicado</div>
+  </div>
+</section>
 
-        <section>
-            <h2>Posicionamiento Sticky</h2>
-            <div class="box sticky">Sticky</div>
-        </section>
-    </div>
+<!-- POSITION FIXED -->
+<section class="bloque">
+  <h2>Position Fixed</h2>
+  <p>El elemento permanece fijo en la pantalla aunque se haga scroll.</p>
+</section>
 
-    <footer>
-        <p>&copy; 2026 Juan Manuel Correa</p>
-    </footer>
+<!-- POSITION STICKY -->
+<section class="bloque">
+  <h2>Position Sticky</h2>
+  <p>Funciona como relative hasta que llega al límite y se queda fijo.</p>
+  <div class="zona-scroll">
+    <div class="box pegajoso">Sticky Box</div>
+    <div class="espacio">Más contenido para hacer scroll...</div>
+  </div>
+</section>
+
+<!-- EJEMPLO FIJO -->
+<div class="boton-fijo">Botón fijo</div>
+
 </body>
 </html>

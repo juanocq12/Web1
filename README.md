@@ -1,22 +1,23 @@
 # Web 1 - Desarrollo Web
+### Ingeniería Informática | Universidad de Caldas
 
-**Nombre:** Juan Manuel Correa
-**Celular:** 3128643741
+**Autor:** Juan Manuel Correa  
+**Celular:** 3128643741  
+**GitHub:** @juanocq12
 
-Repositorio de proyectos desarrollados durante el curso de Desarrollo Web.
+Repositorio dedicado a las prácticas y proyectos de la asignatura de **Web 1**.
 
-## Contenido del Repositorio
+## 📂 Contenido del Repositorio
 
-- **Fetch_API** - Proyectos con Fetch API y consumo de APIs externas
-- **HojaDeVida** - Hoja de vida interactiva en HTML y CSS
-- **Tabla** - Ejercicios con tablas HTML
-- **inputs** - Formularios e inputs HTML
-- **portafolio** - Proyectos del portafolio
-- **posicionamiento** - Ejercicios de posicionamiento CSS
+* **`HojaDeVida/`**: Implementación de estructura semántica y perfiles.
+* **`portafolio/`**: Proyecto de marca personal y exhibición de trabajos.
+* **`inputs/`**: Ejercicios de formularios y captura de datos.
+* **`posicionamiento/`**: Prácticas de maquetación con CSS Positioning.
+* **`Tabla/`**: Estructuración y diseño de tablas de datos.
+* **`Fetch_API/`**: Consumo de APIs externas con Fetch.
 
-## Autor
+## 🔗 Links de interés
 
-**Juan Manuel Correa**
-📱 3128643741
-
-GitHub: [@juanocq12](https://github.com/juanocq12)
+- [Perfil GitHub](https://github.com/juanocq12)
+- [Portafolio Web](./portafolio/index.html)
+- [Hoja de Vida](./HojaDeVida/hojadevida.html)

@@ -9,14 +9,12 @@ async function pokemonQuery(id) {
         
         
         const template = `
-        <div class="col-md-6 col-lg-4">
-            <div class="card" style="width: 18rem;">
-                <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="${pokemon.name}">
-                <div class="card-body">
-                    <h5 class="card-title text-capitalize">${pokemon.name}</h5>
-                    <p class="card-text">Altura: ${pokemon.height} <br> Peso: ${pokemon.weight}</p>
-                    <a href="#" class="btn btn-primary">Ver detalles</a>
-                </div>
+        <div class="card" style="width: 18rem;">
+            <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="${pokemon.name}">
+            <div class="card-body">
+                <h5 class="card-title text-capitalize">${pokemon.name}</h5>
+                <p class="card-text">Altura: ${pokemon.height} <br> Peso: ${pokemon.weight}</p>
+                <a href="#" class="btn btn-primary">Ver detalles</a>
             </div>
         </div>
         `;
